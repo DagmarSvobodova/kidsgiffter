@@ -1,0 +1,490 @@
+body {
+  background-color: palevioletred;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.Galaxy img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+
+.Galaxies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Galaxy {
+  width: 26rem;
+  height: 26rem;
+  margin: 2rem;
+  margin-top: 5rem;
+  text-align: center;
+  border-style: dotted;
+  border-color: rgba(53, 51, 51, 0.6);
+}
+
+.Galaxy:hover {
+  -webkit-animation-name: "gradient";
+          animation-name: "gradient";
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  cursor: pointer;
+}
+.Galaxy:hover img {
+  transform: rotate(360deg);
+  transition: 2s;
+  width: 13rem;
+  height: 13rem;
+}
+.Galaxy:hover h2 {
+  text-decoration: underline;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-color: palevioletred;
+  }
+  50% {
+    background-color: rgba(53, 51, 51, 0.6);
+  }
+  100% {
+    background-color: palevioletred;
+  }
+  0% {
+    color: black;
+  }
+  50% {
+    color: palevioletred;
+  }
+  100% {
+    color: black;
+  }
+  0% {
+    border-color: black;
+  }
+  50% {
+    border-color: palevioletred;
+  }
+  100% {
+    border-color: black;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-color: palevioletred;
+  }
+  50% {
+    background-color: rgba(53, 51, 51, 0.6);
+  }
+  100% {
+    background-color: palevioletred;
+  }
+  0% {
+    color: black;
+  }
+  50% {
+    color: palevioletred;
+  }
+  100% {
+    color: black;
+  }
+  0% {
+    border-color: black;
+  }
+  50% {
+    border-color: palevioletred;
+  }
+  100% {
+    border-color: black;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(53, 51, 51, 0.6);
+  height: 5rem;
+}
+.navigation p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navigation p:hover {
+  font-size: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-left: 2rem;
+}
+
+.index {
+  margin-top: -1rem;
+  margin-bottom: -0.2rem;
+  font-size: 1.5rem;
+  margin-left: 12rem;
+  color: black;
+  font-weight: bold;
+}
+
+.cart img {
+  width: 5rem;
+}
+.cart img:hover {
+  cursor: pointer;
+  width: 7rem;
+}
+
+.Universe {
+  margin-bottom: 5rem;
+}
+.Universe img {
+  width: 35rem;
+  height: 25rem;
+  border-radius: 90%;
+}
+.Universe h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.Universe:hover {
+  cursor: pointer;
+}
+.Universe:hover h2 {
+  text-decoration: underline;
+}
+.Universe:hover img {
+  border-style: solid;
+  border-color: #272755;
+  border-width: 0.5rem;
+}
+
+.Categories {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.Categories img {
+  width: 50rem;
+  border-radius: 90%;
+}
+.Categories h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+
+.Category:hover {
+  cursor: pointer;
+}
+.Category:hover h2 {
+  text-decoration: underline;
+}
+.Category:hover img {
+  border-style: solid;
+  border-color: #272755;
+  border-width: 0.5rem;
+}
+
+.Items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Items h3 {
+  font-size: 2rem;
+}
+.Items h2 {
+  font-size: 2rem;
+}
+
+.SearchBar {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.SearchBar .img {
+  width: 2rem;
+}
+.SearchBar input {
+  height: 1.5rem;
+  width: 10rem;
+}
+.SearchBar p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.SearchBar select {
+  width: 8rem;
+  height: 2rem;
+}
+.SearchBar .select {
+  margin-top: 1rem;
+}
+
+.AboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  text-align: center;
+}
+.AboutUs h1 {
+  font-size: 5rem;
+}
+.AboutUs .Team {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AboutUs img {
+  width: 25rem;
+  margin-right: 1.5rem;
+  border-style: solid;
+  border-color: #272755;
+  margin-bottom: 0;
+}
+.AboutUs p {
+  text-align: center;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+#LinkedIn {
+  height: 8rem;
+  border: none;
+}
+
+.Detail {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(53, 51, 51, 0.3);
+}
+.Detail h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+.Detail .DeatilImg {
+  margin-right: 5rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  display: flex;
+}
+.Detail .mainImg {
+  width: 40rem;
+  height: 25rem;
+}
+.Detail img {
+  width: 15rem;
+  height: 12rem;
+}
+.Detail .info {
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+}
+.Detail .Galaxyverse {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.Detail p {
+  margin-top: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.Detail .Buy {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 4rem;
+}
+.Detail .Buy button {
+  background-color: black;
+  margin-top: 3rem;
+  width: 10rem;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: palevioletred;
+}
+.Detail .Buy p {
+  font-size: 5rem;
+}
+.Detail .Buy button:hover {
+  cursor: pointer;
+}
+
+.Sold {
+  width: 98%;
+  margin: 1rem;
+  background-color: black;
+  text-align: center;
+  color: palevioletred;
+}
+.Sold h3 {
+  font-size: 6rem;
+  margin: 1rem;
+}
+
+.PageOwners {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.owners {
+  display: flex;
+  margin-top: 2rem;
+  height: 100vh;
+}
+.owners .own {
+  width: 25rem;
+  background-color: rgba(53, 51, 51, 0.3);
+  height: 100vh;
+}
+.owners .own h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: -1rem;
+}
+
+.purchased {
+  display: flex;
+  flex-direction: column;
+}
+.purchased h3 {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.owner {
+  width: 25rem;
+  background-color: rgba(53, 51, 51, 0.6);
+  text-align: center;
+}
+
+.owner:hover {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.OwnerFlex {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.UniverseDetail {
+  margin-top: 1rem;
+  display: flex;
+  background-color: rgba(53, 51, 51, 0.3);
+}
+.UniverseDetail img {
+  width: 40rem;
+  border-style: solid;
+  border-color: #272755;
+  border-width: 0.5rem;
+}
+.UniverseDetail .UniverseText {
+  display: flex;
+  flex-direction: column;
+}
+.UniverseDetail .UniverseText h3 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.UniverseDetail .UniverseText p {
+  text-align: center;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+.UniverseDetail .UniverseText .Number {
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+.UniverseDetail .UniverseText .Universeimg {
+  width: 15rem;
+  border-width: 0;
+  align-self: center;
+}
+.UniverseDetail .UniverseText .belongs {
+  font-size: 3rem;
+}
+
+.Cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Cart .ImageText {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+  margin-left: 8rem;
+  border-style: dotted;
+  border-color: rgba(53, 51, 51, 0.6);
+}
+.Cart img {
+  width: 30rem;
+  align-self: center;
+  margin-bottom: 3rem;
+}
+.Cart .ItemPrice {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  width: 30rem;
+  margin-left: 25rem;
+  background-color: rgba(133, 116, 116, 0.3);
+}
+.Cart button {
+  background-color: black;
+  margin-top: 3rem;
+  width: 10rem;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: palevioletred;
+  align-self: center;
+}
+
+.Empty {
+  display: flex;
+  flex-direction: column;
+}
+.Empty p {
+  font-size: 5rem;
+  text-align: center;
+  background-color: rgba(53, 51, 51, 0.3);
+}
+.Empty img {
+  width: 20rem;
+  align-self: center;
+}
+
+/*# sourceMappingURL=eshop.css.map*/

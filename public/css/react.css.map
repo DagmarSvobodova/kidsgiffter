@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./resources/scss/react.scss"],"names":[],"mappings":"AAAA;EACI;AACJ,C","file":"css/react.css","sourcesContent":["body {\n    background-color: rgb(163, 78, 106);\n}"],"sourceRoot":""}
