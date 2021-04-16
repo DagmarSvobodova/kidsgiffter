@@ -189,7 +189,7 @@ function Register(props) {
                 password_confirmation: password_confirmation
               };
               _context.next = 4;
-              return fetch('/register', {
+              return fetch('api/newuser', {
                 method: 'POST',
                 body: JSON.stringify(request_data),
                 headers: {

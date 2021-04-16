@@ -21,7 +21,8 @@ Route::middleware('auth:api')->post('/user', function (Request $request) {
 }); 
 
 Route::post('/token', 'Api\UserController@token');                                          
-Route::get('/user', 'Api\UserController@user')->middleware('auth:sanctum');                                                
+Route::get('/user', 'Api\UserController@user')->middleware('auth:sanctum');
+Route::post('/newuser', 'Api\UserController@create_user');                                                    
 Route::post('/logout', 'Api\UserController@logout')->middleware('auth:sanctum');
 
 //children

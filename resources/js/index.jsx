@@ -7,6 +7,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Children from './children/Children';
 
 import Header from './welcomepage/header/Header';
 import Login from './welcomepage/header/Login';
@@ -18,6 +19,7 @@ import Body from './welcomepage/mainPage/Body';
     <Router>
         
     <Header></Header>
+    <Children/>
     <Switch>
     <Route path="/login" children={ <Login /> } />
     <Route

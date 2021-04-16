@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 
-Route::get('guest/{pi?}', 'ViewController@react')->where("pi", ".*");
+Route::get('home/{pi?}', 'ViewController@react')->where("pi", ".*");
 Route::get('/auth/{pi?}', 'ViewController@auth_react')->where("pi", ".*")->middleware('auth:sanctum');
 
 //login

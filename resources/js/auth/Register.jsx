@@ -10,12 +10,17 @@ export default function Register(props) {
         password_confirmation: ''
     })
 
+    
+
+
     const handleSubmit = async (event) => {
 
         event.preventDefault();
 
+    
+
         let request_data = {email, name, address, password, password_confirmation};
-        const response = await fetch('/register', {
+        let response = await fetch('api/newuser', {
             method: 'POST',
             body: JSON.stringify(request_data),
             headers: {

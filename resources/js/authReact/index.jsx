@@ -13,6 +13,7 @@ import Header from '../welcomepage/header/Header';
 import AddChild from './AddChild';
 import AuthPage from './body/AuthPage';
 import Register from '../auth/Register';
+import Children from '../children/Children';
 
        
     
@@ -21,21 +22,26 @@ import Register from '../auth/Register';
         <p>ahoj</p>
         
     <Header></Header>
+
+    <Children />
+
     <Switch>
    
     <Route
-         exact path="/auth" children={ <AuthPage /> }
+         path="/auth" children={ <AuthPage /> }
          
         />
      <Route
-         exact path="/auth/add" children={ <AddChild /> }
+          path="/auth/add" children={ <AddChild /> }
          
         />
 
 <Route
-         exact path="/register" children={ <Register /> }
+          path="/register" children={ <Register /> }
          
         />
+    
+   
        
        
      
