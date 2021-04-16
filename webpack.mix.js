@@ -24,14 +24,14 @@ if (!mix.inProduction()) {
 }
 mix.sass('resources/scss/react.scss', 'public/css');
 
-
+mix.js('resources/js/authReact/index.jsx', 'public/js/authReact.js').react();
 mix.js('resources/js/auth/index.jsx', 'public/js/auth.js').react();
-mix.js('resources/js/index.jsx', 'public/js/.js').react();
+mix.js('resources/js/index.jsx', 'public/js/index.js').react();
 mix.browserSync({
     host: 'localhost',
     port: 3000,
     proxy: {
-        target: process.env.APP_URL
+        target: process.env.APP_URL // Yay! Using APP_URL from the .env file!
     }
 });
 

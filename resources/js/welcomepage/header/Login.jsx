@@ -26,7 +26,7 @@ export default function Login(props) {
         const response_data = await response.json();
 
         if (response.status == 200) {
-            location.href = '/';
+            location.href = '/auth/';
         } else {
             setErrors(response_data.errors);
         }

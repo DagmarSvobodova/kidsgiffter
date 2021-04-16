@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import Header from './welcomepage/header/Header';
+import Login from './welcomepage/header/Login';
 import Body from './welcomepage/mainPage/Body';
 
        
@@ -18,11 +19,14 @@ import Body from './welcomepage/mainPage/Body';
         
     <Header></Header>
     <Switch>
+    <Route path="/login" children={ <Login /> } />
     <Route
-          path="/" children={ <Body /> }
+         exact path="/" children={ <Body /> }
          
         />
-      
+       
+       
+     
       </Switch>
     </Router>
            

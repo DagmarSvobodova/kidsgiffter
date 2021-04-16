@@ -21,20 +21,21 @@ use Illuminate\Support\Facades\Auth;
 
 
 
-Route::get('/{pi?}', 'ViewController@react')->where("pi", ".*");
+Route::get('guest/{pi?}', 'ViewController@react')->where("pi", ".*");
+Route::get('/auth/{pi?}', 'ViewController@auth_react')->where("pi", ".*")->middleware('auth:sanctum');
 
 //login
-Route::view('/login', 'auth/react')->name('login');
-Route::view('/register', 'auth/react')->name('register');
+Route::view('/login', 'mainPage')->name('login');
+Route::view('/register', 'auth/react')->name('register')->middleware('auth:sanctum');
 
 
-Route::get('/register', function() {
+Route::get('/', function() {
 
     if (Auth::check()) {
-        return redirect('/');
+        return view('authReact');
     } else {
-        return view('auth/react');
+        return view('mainPage');
     }
 
-})->name('register');
+});
 

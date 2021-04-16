@@ -27,7 +27,7 @@ export default function Register(props) {
         const response_data = await response.json();
 
         if (Math.floor(response.status / 100) == 2) { 
-            location.href = '/'; 
+            location.href = '/auth'; 
             
         }
     }

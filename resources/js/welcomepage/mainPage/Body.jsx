@@ -8,8 +8,8 @@ function Body() {
 
     return (
       <div className="my">
-      
-        </div>
+  
+         </div>
     );
 }
 

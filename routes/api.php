@@ -25,7 +25,7 @@ Route::get('/user', 'Api\UserController@user')->middleware('auth:sanctum');
 Route::post('/logout', 'Api\UserController@logout')->middleware('auth:sanctum');
 
 //children
-Route::post('/child/create', 'Api\ChildController@create')->middleware('auth:sanctum');
+Route::post('/child/create', 'Api\ChildController@create'); //->middleware('auth:sanctum');
 Route::get('/waiting/{child_id}', 'Api\ChildController@waiting'); 
 Route::get('/delete_wish/{child_id}', 'Api\ChildController@delete_wish')->middleware('auth:sanctum'); 
 Route::get('/delete_waiter/{child_id}', 'Api\ChildController@delete_waiter')->middleware('auth:sanctum'); 

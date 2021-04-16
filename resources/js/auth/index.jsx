@@ -6,13 +6,15 @@ import {
     Route,
 } from "react-router-dom";
 
-import Login from './Login.jsx';
+
 import Register from './Register.jsx';
+
 
 ReactDOM.render((
     <Router>
         <Switch>
-            <Route path="/login" children={ <Login /> } />
+          
+           
             <Route path="/register" children={ <Register /> } />
         </Switch>
     </Router>
